@@ -44,4 +44,9 @@ public class compteBancaire {
         System.out.println(" Votre nom est : "+nomProprio+" \n Votre solde est de : "+solde);
     }
 
+    public String virement(compteBancaire c1, compteBancaire c2, int somme){
+        c1.solde -= somme;
+        c2.solde += somme;
+        return "Vous avez virez la somme de "+somme +" euro(s)";
+    }
 }
